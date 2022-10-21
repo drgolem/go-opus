@@ -45,6 +45,7 @@ func (d *OpusPacketDecoder) SampleRate() int {
 	return d.sampleRate
 }
 
+// returns samplerate, channels, bitsPerSample
 func (d *OpusPacketDecoder) GetFormat() (int, int, int) {
 	return d.sampleRate, d.channels, 16
 }
